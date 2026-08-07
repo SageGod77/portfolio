@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Neo <span color="--green:#00FF41"> Njabulo</span>   Mahlangu — Software Developer</title>
+<title>Neo Njabulo Mahlangu — Software Developer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Fira+Code:wght@400;500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -34,13 +34,13 @@
   ::selection{background:var(--green2);color:#000;}
   a{color:var(--green);text-decoration:none;}
   button{font-family:var(--mono);cursor:pointer;}
-
+ 
   /* focus visibility */
   a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible{
     outline:1px solid var(--green);
     outline-offset:3px;
   }
-
+ 
   /* ============ BINARY RAIN ============ */
   #rain{
     position:fixed;inset:0;
@@ -63,7 +63,7 @@
     from{ transform:translateY(-10%); }
     to{ transform:translateY(120vh); }
   }
-
+ 
   /* subtle scanlines + vignette */
   #crt{
     position:fixed;inset:0;
@@ -75,7 +75,7 @@
     mix-blend-mode:multiply;
     opacity:0.35;
   }
-
+ 
   /* ============ BOOT SCREEN ============ */
   #boot{
     position:fixed;inset:0;
@@ -97,7 +97,7 @@
     white-space:pre-wrap;
   }
   .boot-bar-wrap{color:var(--dim);}
-
+ 
   /* ============ LAYOUT ============ */
   main{position:relative;z-index:1;}
   .wrap{max-width:920px;margin:0 auto;padding:0 24px;}
@@ -119,7 +119,7 @@
     text-transform:uppercase;
     letter-spacing:.08em;
   }
-
+ 
   /* blinking cursor, used everywhere */
   .cursor{
     display:inline-block;
@@ -130,7 +130,7 @@
     animation:blink 1.1s steps(1,end) infinite;
   }
   @keyframes blink{50%{opacity:0;}}
-
+ 
   /* ============ NAV ============ */
   nav{
     position:fixed;top:0;left:0;right:0;
@@ -165,7 +165,7 @@
     text-shadow:0 0 8px rgba(0,255,65,0.55);
   }
   .nav-links a:hover::before, .nav-links a.active::before{opacity:1;}
-
+ 
   /* ============ HERO ============ */
   #hero{
     min-height:100vh;
@@ -201,7 +201,7 @@
     box-shadow:0 0 8px var(--green);
   }
   .cta-row{display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;}
-
+ 
   /* ============ BUTTONS ============ */
   .btn{
     display:inline-flex;align-items:center;gap:8px;
@@ -220,11 +220,11 @@
   .btn.solid{
     background:rgba(0,255,65,0.08);
   }
-
+ 
   /* ============ ABOUT ============ */
   #about p{max-width:640px;color:var(--text);}
   #about .sig{color:var(--dim);margin-top:20px;font-size:13px;}
-
+ 
   /* ============ SKILLS ============ */
   .npm-head{color:var(--dim);font-size:13px;margin-bottom:6px;}
   .npm-list{list-style:none;margin:0;padding:0;font-size:14px;}
@@ -240,7 +240,7 @@
   .npm-list li .check{color:var(--green);}
   .npm-list li .ver{color:var(--dim);font-size:12px;}
   .npm-list li .note{color:var(--dim);font-size:12px;margin-left:auto;}
-
+ 
   /* ============ PROJECTS ============ */
   .proj-grid{
     display:grid;
@@ -276,7 +276,7 @@
   .status.progress{color:#F2C744;}
   .proj-actions{display:flex;gap:10px;flex-wrap:wrap;}
   .proj-actions .btn{padding:7px 12px;font-size:12px;}
-
+ 
   /* ============ EXPERIENCE (git log) ============ */
   .commit{
     border-left:1px solid var(--line);
@@ -294,7 +294,7 @@
   .commit .role{color:var(--white);font-size:14px;font-weight:600;}
   .commit ul{margin:8px 0 0;padding-left:18px;color:var(--text);font-size:13px;}
   .commit li{margin:3px 0;}
-
+ 
   /* ============ CONTACT ============ */
   #contact .term-head{color:var(--dim);font-size:13px;margin-bottom:20px;}
   .form-row{margin-bottom:18px;}
@@ -305,7 +305,7 @@
   .form-row input, .form-row textarea{
     width:100%;
     background:var(--bg2);
-    border:0px solid var(--line);
+    border:1px solid var(--line);
     color:var(--text);
     font-family:var(--mono);
     font-size:13px;
@@ -316,7 +316,7 @@
     border-color:var(--green2);
   }
   #contactMsg{margin-top:14px;font-size:12px;color:var(--green);min-height:16px;}
-
+ 
   footer{
     padding:40px 24px 60px;
     text-align:center;
@@ -324,7 +324,7 @@
     font-size:12px;
     border-top:1px solid var(--line);
   }
-
+ 
   /* ============ FLOATING TERMINAL (easter eggs) ============ */
   #miniterm{
     position:fixed;right:18px;bottom:18px;
@@ -354,7 +354,7 @@
     flex:1;background:transparent;border:none;color:var(--green);
     font-family:var(--mono);font-size:12px;outline:none;
   }
-
+ 
   #konami-msg{
     position:fixed;inset:0;z-index:200;
     background:rgba(5,5,5,0.92);
@@ -365,7 +365,7 @@
   #konami-msg.show{display:flex;}
   #konami-msg .box{max-width:480px;color:var(--green);font-size:14px;line-height:1.8;}
   #konami-msg .close{margin-top:20px;}
-
+ 
   /* ============ MOBILE ============ */
   @media(max-width:720px){
     .nav-links{gap:14px;}
@@ -375,7 +375,7 @@
     #miniterm{left:12px;right:12px;width:auto;bottom:12px;}
     #hero{padding-top:100px;}
   }
-
+ 
   @media (prefers-reduced-motion: reduce){
     .rain-col{animation:none;display:none;}
     .cursor{animation:none;}
@@ -384,14 +384,14 @@
 </style>
 </head>
 <body>
-
+ 
 <div id="rain" aria-hidden="true"></div>
 <div id="crt" aria-hidden="true"></div>
-
+ 
 <div id="boot" role="status" aria-live="polite">
   <pre id="bootText"></pre>
 </div>
-
+ 
 <nav>
   <div class="nav-inner">
     <div class="nav-brand"><span>@</span>legendarysage<span>god</span></div>
@@ -405,7 +405,7 @@
     </ul>
   </div>
 </nav>
-
+ 
 <main>
   <section id="hero" class="wrap">
     <div class="term">
@@ -413,19 +413,19 @@
       <div>Loading<span class="cursor" style="width:.3em"></span></div>
       <div class="bar">██████████████ 100%</div>
     </div>
-    <h1>Neo Njabulo Mahlangu</h1>
+    <h1>Neo <span style="color:var(--green);">Njabulo</span> Mahlangu</h1>
     <div class="role">Software Developer — Full Stack Development</div>
-    <div class="field"><b>Name:</b> <span>Neo  <span color="--green:#00FF41" Njabulo></span> Mahlangu</span></div>
+    <div class="field"><b>Name:</b> <span>Neo <span style="color:var(--green);">Njabulo</span> Mahlangu</span></div>
     <div class="field"><b>Occupation:</b> <span>Software Developer</span></div>
     <div class="field"><b>Specialization:</b> <span>Full Stack Development</span></div>
     <div class="field"><span class="status-dot"></span><b>Status:</b> <span>Available For Opportunities</span></div>
     <div class="cta-row">
-      <a class="btn solid" href="fhfhf">&gt; Academic Record</a>
-      <a class="btn" href="#contact">&gt; Download CV</a>
+      <a class="btn solid" href="https://raw.githubusercontent.com/SageGod77/portfolio/main/Neo%20Mahlangu%20Academic%20Record.pdf" target="_blank" rel="noopener noreferrer" download="Neo Mahlangu Academic Record.pdf">&gt; Academic Record</a>
+      <a class="btn" href="https://raw.githubusercontent.com/SageGod77/portfolio/main/Neo%20Mahlangu%20CV.pdf" target="_blank" rel="noopener noreferrer" download="Neo Mahlangu CV.pdf">&gt; Download CV</a>
     </div>
     <div style="margin-top:36px;color:var(--dim);">&gt;<span class="cursor"></span></div>
   </section>
-
+ 
   <section id="about" class="wrap">
     <div class="prompt-label">Neo About.txt</div>
     <h2>About</h2>
@@ -433,7 +433,7 @@
     <p>Outside Of Client Work, i Spend Weekends Pulling Things Apart To See How They Are Built Back Together... Usually With A Terminal Open In The Corner Of The Screen, Out Of Habit As Much As Necessity.</p>
     <div class="sig">&gt; Status: Compiling, Not Sleeping. "Work Don't Stop, Grind Don't Stop."<span class="cursor" style="width:.3em"></span></div>
   </section>
-
+ 
   <section id="skills" class="wrap">
     <div class="prompt-label">npm list --depth=0</div>
     <h2>Installed Packages</h2>
@@ -444,12 +444,12 @@
       <li><span class="branch">├──</span><span class="check">✓</span> kotlin <span class="ver">@1.9</span><span class="note">backend / android</span></li>
       <li><span class="branch">├──</span><span class="check">✓</span> java <span class="ver">@17</span><span class="note">where it started</span></li>
       <li><span class="branch">├──</span><span class="check">✓</span> sql-server <span class="ver">@2022</span><span class="note">persistence</span></li>
-      <li><span class="branch">├──</span><span class="check">✓</span> docker <span class="ver">@latest</span><span class="note">containers</span></li>
+      <li><span class="branch">├──</span><span class="check">✓</span> c# <span class="ver">@12</span><span class="note">containerized apis / .net</span></li>
       <li><span class="branch">├──</span><span class="check">✓</span> firebase <span class="ver">@10.x</span><span class="note">realtime / auth</span></li>
       <li><span class="branch">└──</span><span class="check">✓</span> git <span class="ver">@2.44</span><span class="note">version control</span></li>
     </ul>
   </section>
-
+ 
   <section id="projects" class="wrap">
     <div class="prompt-label">built ./projects</div>
     <h2>Projects</h2>
@@ -463,11 +463,11 @@
         </div>
         <div class="status complete">STATUS: COMPLETE</div>
         <div class="proj-actions">
-          <a class="btn" href="github.com/SageGod77/PRETORIA-WEST-AND-BEYOND-PASTORS-FORUM" onclick="return false;">&gt; github</a>
-          <a class="btn solid" href="https://github.com/SageGod77/PRETORIA-WEST-AND-BEYOND-PASTORS-FORUM" onclick="return false;">&gt; open</a>
+          <a class="btn" href="https://github.com/SageGod77/PRETORIA-WEST-AND-BEYOND-PASTORS-FORUM" target="_blank" rel="noopener noreferrer">&gt; github</a>
+          <a class="btn solid" href="https://github.com/SageGod77/PRETORIA-WEST-AND-BEYOND-PASTORS-FORUM" target="_blank" rel="noopener noreferrer">&gt; open</a>
         </div>
       </div>
-
+ 
       <div class="proj">
         <div class="proj-titlebar"><span class="dotr"></span><span class="dotr"></span><span class="dotr"></span>&nbsp;EventEase — VBS</div>
         <h3>EventEase</h3>
@@ -477,11 +477,11 @@
         </div>
         <div class="status complete">STATUS: COMPLETE</div>
         <div class="proj-actions">
-          <a class="btn" href="https://github.com/SageGod77/CLDV7112.Practicum" onclick="return false;">&gt; github</a>
-          <a class="btn solid" href="CLDV Report" download onclick="return false;">&gt; download</a>
+          <a class="btn" href="https://github.com/SageGod77/CLDV7112.Practicum" target="_blank" rel="noopener noreferrer">&gt; github</a>
+          <a class="btn solid" href="https://raw.githubusercontent.com/SageGod77/portfolio/main/CLDV.POE.docx" target="_blank" rel="noopener noreferrer" download="CLDV.POE.docx">&gt; download</a>
         </div>
       </div>
-
+ 
       <div class="proj">
         <div class="proj-titlebar"><span class="dotr"></span><span class="dotr"></span><span class="dotr"></span>&nbsp;YNH — WebApp</div>
         <h3>Yolanda Ngcuka Holdings</h3>
@@ -491,11 +491,11 @@
         </div>
         <div class="status complete">STATUS: COMPLETE</div>
         <div class="proj-actions">
-          <a class="btn" href="https://github.com/SageGod77/YNH-YolandaNgcukaHoldings" onclick="return false;">&gt; github</a>
-          <a class="btn solid" href="https://ynh-yolanda-ngcuka-holdings.vercel.app/" onclick="return false;">&gt; open</a>
+          <a class="btn" href="https://github.com/SageGod77/YNH-YolandaNgcukaHoldings" target="_blank" rel="noopener noreferrer">&gt; github</a>
+          <a class="btn solid" href="https://ynh-yolanda-ngcuka-holdings.vercel.app/" target="_blank" rel="noopener noreferrer">&gt; open</a>
         </div>
       </div>
-
+ 
       <div class="proj">
         <div class="proj-titlebar"><span class="dotr"></span><span class="dotr"></span><span class="dotr"></span>&nbsp;dev-portfolio — Webp</div>
         <h3>Developer Portfolio</h3>
@@ -505,46 +505,46 @@
         </div>
         <div class="status progress">STATUS: IN_PROGRESS</div>
         <div class="proj-actions">
-          <a class="btn" href="https://github.com/SageGod77/portfolio" onclick="return false;">&gt; github</a>
-          <a class="btn solid" href="https://portfolio-inky-delta-itvwc16z7o.vercel.app/" onclick="return false;">&gt; open</a>
+          <a class="btn" href="https://github.com/SageGod77/portfolio" target="_blank" rel="noopener noreferrer">&gt; github</a>
+          <a class="btn solid" href="https://portfolio-inky-delta-itvwc16z7o.vercel.app/" target="_blank" rel="noopener noreferrer">&gt; open</a>
         </div>
       </div>
     </div>
   </section>
-
+ 
   <section id="experience" class="wrap">
     <div class="prompt-label">git log --oneline --graph</div>
     <h2>Experience</h2>
-
+ 
     <div class="commit">
       <div class="hash">commit 9f1a2c3 (HEAD -&gt; main)</div>
-      <div class="meta">February 202 – Present</div>
+      <div class="meta">February 2024 – Present</div>
       <div class="role">Freelancer/Informal IT Support - Self-Employed</div>
       <ul>
-        <li>Resolved Software, Hardware, And Microsoft Office-Related Issues For Students And Peers, Reducing Downtime Auring Academic Projects And Assignment Submissions. </li>
-        <li>Provided Technical Guidance On Document Formatting, File Conversion, And Digital Collaboration Tools To Support Academic Productivity. </li>
-        <li>Assisted Users With Troubleshooting Common Windows, Microsoft Office, And Software Configuration Issues. </li>
-        <li>Maintained Accurate Documentation And Organisation Of Academic Project Files Across Multiple Modules And Development Projects. </li>
-        <li>Collaborated With Peers On Software Development Assignments, Contributing To System Design, Testing, Debugging, And Project Delivery. </LI>
+        <li>Resolved Software, Hardware, And Microsoft Office-Related Issues For Students And Peers, Reducing Downtime During Academic Projects And Assignment Submissions.</li>
+        <li>Provided Technical Guidance On Document Formatting, File Conversion, And Digital Collaboration Tools To Support Academic Productivity.</li>
+        <li>Assisted Users With Troubleshooting Common Windows, Microsoft Office, And Software Configuration Issues.</li>
+        <li>Maintained Accurate Documentation And Organisation Of Academic Project Files Across Multiple Modules And Development Projects.</li>
+        <li>Collaborated With Peers On Software Development Assignments, Contributing To System Design, Testing, Debugging, And Project Delivery.</li>
       </ul>
     </div>
-
+ 
     <div class="commit">
       <div class="hash">commit 7b48ee1</div>
       <div class="meta">February 2024 – February 2025</div>
       <div class="role">Peer Learning Support – Academic Environment</div>
       <ul>
-        <li>Resolved 20+ Software And System Issues For Peers, Improving Workflow Efficiency During Academic Deadlines. </li>
-        <li>Assisted Users With Microsoft Word, Excel, And PowerPoint, Helping Complete Assignments Faster. </li>
-        <li>Converted And Formatted Ensuring Submission-Ready Quality. </li>
-        <li>Set Up And Configured Computers For Basic Use, Reducing Setup Time For New Users. </li>
-        <li>Provided Ongoing Technical Support, Improving User Confidence With Everyday Computer Tasks. </li>
+        <li>Resolved 20+ Software And System Issues For Peers, Improving Workflow Efficiency During Academic Deadlines.</li>
+        <li>Assisted Users With Microsoft Word, Excel, And PowerPoint, Helping Complete Assignments Faster.</li>
+        <li>Converted And Formatted Documents, Ensuring Submission-Ready Quality.</li>
+        <li>Set Up And Configured Computers For Basic Use, Reducing Setup Time For New Users.</li>
+        <li>Provided Ongoing Technical Support, Improving User Confidence With Everyday Computer Tasks.</li>
       </ul>
     </div>
   </section>
-
+ 
   <section id="contact" class="wrap">
-    <div class="prompt-label">lsg thipeneo57/div>
+    <div class="prompt-label">whoami --user=lsg</div>
     <h2>Contact</h2>
     <div class="term-head">Connecting to thipeneo57@gmail.com... awaiting incoming connection<span class="cursor" style="width:.3em"></span></div>
     <form id="contactForm">
@@ -560,19 +560,19 @@
         <label for="cmsg">message</label>
         <textarea id="cmsg" name="message" rows="5" required></textarea>
       </div>
-      <button type="submit" class="btn solid">&gt; send_message --to=mailto:thipeneo57@gmail.com</button>
+      <button type="submit" class="btn solid">&gt; send_message --to=thipeneo57@gmail.com</button>
       <div id="contactMsg"></div>
     </form>
   </section>
-
+ 
   <footer>
     &gt; connection closed. session logged.<br>
-    © <span id="year"></span> Neo Njabulo Mahlangu — Built From Scratch, No Templates.
+    © <span id="year"></span> Neo <span style="color:var(--green);">Njabulo</span> Mahlangu — Built From Scratch, No Templates.
   </footer>
 </main>
-
+ 
 <div id="miniterm">
-  <div class="mt-head" id="mtHead">neo@portfolio: mini-shell <span id="mtToggleIcon">[+]</span></div>
+  <div class="mt-head" id="mtHead">lsg@portfolio: mini-shell <span id="mtToggleIcon">[+]</span></div>
   <div class="mt-body" id="mtBody">
     <div class="mt-log" id="mtLog">type 'help' for a list of commands</div>
     <div class="mt-inputrow">
@@ -581,7 +581,7 @@
     </div>
   </div>
 </div>
-
+ 
 <div id="konami-msg">
   <div class="box">
     <div>&gt; Sudo Access Granted</div>
@@ -590,11 +590,11 @@
     <button class="btn close" onclick="document.getElementById('konami-msg').classList.remove('show')">&gt; exit</button>
   </div>
 </div>
-
+ 
 <script>
 document.getElementById('year').textContent = new Date().getFullYear();
 var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
+ 
 /* ---------- BOOT SEQUENCE ---------- */
 (function boot(){
   var lines = [
@@ -609,13 +609,13 @@ var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-moti
   ];
   var el = document.getElementById('bootText');
   var bootEl = document.getElementById('boot');
-
+ 
   if(reduceMotion){
     el.textContent = lines.join('\n');
     setTimeout(function(){ bootEl.classList.add('hide'); }, 300);
     return;
   }
-
+ 
   var i = 0;
   function next(){
     if(i < lines.length){
@@ -628,7 +628,7 @@ var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-moti
   }
   next();
 })();
-
+ 
 /* ---------- BINARY RAIN ---------- */
 (function rain(){
   if(reduceMotion) return;
@@ -649,7 +649,7 @@ var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-moti
     container.appendChild(col);
   }
 })();
-
+ 
 /* ---------- SCROLL REVEAL for skills list ---------- */
 (function reveal(){
   var items = document.querySelectorAll('#npmList li');
@@ -665,7 +665,7 @@ var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-moti
   }, {threshold:0.3});
   items.forEach(function(it){ obs.observe(it); });
 })();
-
+ 
 /* ---------- NAV active state ---------- */
 (function navActive(){
   var links = document.querySelectorAll('.nav-links a');
@@ -683,17 +683,23 @@ var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-moti
     });
   });
 })();
-
+ 
 /* ---------- CONTACT FORM ---------- */
 document.getElementById('contactForm').addEventListener('submit', function(e){
   e.preventDefault();
   var msg = document.getElementById('contactMsg');
+  var name = document.getElementById('cname').value;
+  var email = document.getElementById('cemail').value;
+  var body = document.getElementById('cmsg').value;
   msg.textContent = 'transmitting...';
   setTimeout(function(){
-    msg.textContent = '> message queued for delivery. connect a form service or mailto link to go live.';
-  }, 900);
+    var subject = encodeURIComponent('Portfolio contact from ' + name);
+    var mailBody = encodeURIComponent(body + '\n\n— ' + name + ' (' + email + ')');
+    window.location.href = 'mailto:thipeneo57@gmail.com?subject=' + subject + '&body=' + mailBody;
+    msg.textContent = '> opening your email client to send this message. connect a form service (e.g. Formspree) for true in-page delivery.';
+  }, 700);
 });
-
+ 
 /* ---------- MINI TERMINAL / EASTER EGGS ---------- */
 (function miniterm(){
   var box = document.getElementById('miniterm');
@@ -702,22 +708,22 @@ document.getElementById('contactForm').addEventListener('submit', function(e){
   var input = document.getElementById('mtInput');
   var log = document.getElementById('mtLog');
   var icon = document.getElementById('mtToggleIcon');
-
+ 
   head.addEventListener('click', function(){
     box.classList.toggle('open');
     icon.textContent = box.classList.contains('open') ? '[-]' : '[+]';
     if(box.classList.contains('open')) input.focus();
   });
-
+ 
   var responses = {
     help: 'available commands: help, whoami, sudo, clear, exit, github',
-    whoami: 'neo sage mahlangu — full stack developer, currently available',
+    whoami: 'lsg — legendarysagegod — neo njabulo mahlangu, full stack developer, currently available',
     sudo: 'nice try. permission denied: this developer already has full access to their own portfolio',
-    github: 'opening github.com/ — replace with your real profile link',
+    github: 'opening github.com/SageGod77 — check the projects section above for direct repo links',
     exit: 'session cannot be closed from in here. try scrolling instead',
     clear: '__CLEAR__'
   };
-
+ 
   input.addEventListener('keydown', function(e){
     if(e.key !== 'Enter') return;
     var val = input.value.trim().toLowerCase();
@@ -732,7 +738,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e){
     }
   });
 })();
-
+ 
 /* ---------- KONAMI CODE ---------- */
 (function konami(){
   var seq = ['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];
@@ -753,3 +759,4 @@ document.getElementById('contactForm').addEventListener('submit', function(e){
 </script>
 </body>
 </html>
+ 
